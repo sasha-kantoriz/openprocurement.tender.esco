@@ -13,6 +13,7 @@ from openprocurement.tender.esco.tests.tender_blanks import (
     tender_min_value,
     tender_with_nbu_discount_rate,
     invalid_bid_tender_features,
+    invalid_bid_tender_lot,
     one_invalid_bid_tender
 )
 from openprocurement.tender.belowthreshold.tests.tender_blanks import (
@@ -22,10 +23,7 @@ from openprocurement.tender.belowthreshold.tests.tender_blanks import (
     guarantee, tender_Administrator_change,
     invalid_tender_conditions
 )
-from openprocurement.tender.openeu.tests.tender_blanks import (
-    patch_tender,
-    invalid_bid_tender_lot
-)
+from openprocurement.tender.openeu.tests.tender_blanks import patch_tender
 
 
 class TenderESCOEUTest(BaseESCOWebTest):
